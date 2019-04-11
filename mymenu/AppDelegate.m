@@ -18,8 +18,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor redColor];
+
     UIImage *imag = [UIImage new];
     UIImage *imag1 = [UIImage new];
+    UIImage *imag2 = [UIImage new];
     HCMainTabbarController *tabbar = [[HCMainTabbarController alloc]init];
     self.window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];
