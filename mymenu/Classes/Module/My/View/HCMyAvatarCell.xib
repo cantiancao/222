@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCMyViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HCMyAvatarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="229.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="形状 1 拷贝" translatesAutoresizingMaskIntoConstraints="NO" id="b2c-dY-E1n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="229.5"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncc-9s-RaL">
+                        <rect key="frame" x="111" y="168.5" width="99" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="登录/注册" backgroundImage="public_btn_loginandregister">
+                            <color key="titleColor" red="1" green="0.5450980392" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0DX-Qn-esX" customClass="IBWaterWaveView">
+                        <rect key="frame" x="0.0" y="141" width="320" height="88.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTO-kE-VRs">
+                                <rect key="frame" x="160" y="20" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-zM-lCC">
+                                <rect key="frame" x="160" y="28" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vTO-kE-VRs" firstAttribute="centerX" secondItem="0DX-Qn-esX" secondAttribute="centerX" id="0U8-g9-6xq"/>
+                            <constraint firstItem="gNZ-zM-lCC" firstAttribute="centerX" secondItem="0DX-Qn-esX" secondAttribute="centerX" id="5BL-dw-Mxu"/>
+                            <constraint firstItem="vTO-kE-VRs" firstAttribute="top" secondItem="0DX-Qn-esX" secondAttribute="top" constant="20" id="Fhz-AL-g6s"/>
+                            <constraint firstItem="gNZ-zM-lCC" firstAttribute="top" secondItem="vTO-kE-VRs" secondAttribute="bottom" constant="8" id="Udq-E9-b4p"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p0-Fk-0x7">
+                        <rect key="frame" x="110.5" y="41" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="AhT-CO-JdF"/>
+                            <constraint firstAttribute="width" constant="100" id="xuI-0g-WDD"/>
+                        </constraints>
+                        <state key="normal" image="tx"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ncc-9s-RaL" secondAttribute="bottom" constant="30" id="7qk-og-eus"/>
+                    <constraint firstAttribute="bottom" secondItem="0DX-Qn-esX" secondAttribute="bottom" id="IjY-Ui-YSV"/>
+                    <constraint firstAttribute="trailing" secondItem="0DX-Qn-esX" secondAttribute="trailing" id="U0B-y1-5ZA"/>
+                    <constraint firstItem="0DX-Qn-esX" firstAttribute="top" secondItem="9p0-Fk-0x7" secondAttribute="bottom" id="UHK-O5-8uo"/>
+                    <constraint firstItem="b2c-dY-E1n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dRa-6T-BeD"/>
+                    <constraint firstItem="9p0-Fk-0x7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eFz-mU-Q1I"/>
+                    <constraint firstItem="ncc-9s-RaL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eQl-fv-f4X"/>
+                    <constraint firstItem="b2c-dY-E1n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ezX-t2-Kqf"/>
+                    <constraint firstItem="9p0-Fk-0x7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="hni-wd-6Vb"/>
+                    <constraint firstAttribute="bottom" secondItem="b2c-dY-E1n" secondAttribute="bottom" id="qg4-yW-HaS"/>
+                    <constraint firstItem="0DX-Qn-esX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xdM-6C-3hG"/>
+                    <constraint firstAttribute="trailing" secondItem="b2c-dY-E1n" secondAttribute="trailing" id="y6o-ga-Iio"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarBtn" destination="9p0-Fk-0x7" id="3Dr-61-BAJ"/>
+                <outlet property="bgView" destination="b2c-dY-E1n" id="cOJ-hK-YMV"/>
+                <outlet property="loginBtn" destination="ncc-9s-RaL" id="4iO-C2-1Ef"/>
+                <outlet property="messageView" destination="0DX-Qn-esX" id="KCw-uP-IiB"/>
+                <outlet property="nameL" destination="vTO-kE-VRs" id="m9C-ee-u0e"/>
+                <outlet property="numL" destination="gNZ-zM-lCC" id="cGz-xT-Ta9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="public_btn_loginandregister" width="99" height="31"/>
+        <image name="tx" width="103" height="103"/>
+        <image name="形状 1 拷贝" width="414" height="213"/>
+    </resources>
+</document>
